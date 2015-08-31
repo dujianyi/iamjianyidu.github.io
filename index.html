@@ -67,7 +67,7 @@
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <h1>Jianyi Du</h1>
                     Everyone calls me <b>Jarvis...</b><br>
                     <hr>
@@ -81,11 +81,12 @@
                     <a class="btn btn-default" href="mailto:dujianyi@gmail.com"><img src="img/gmail-logo.png" style="height:14px;">&nbsp;Email</a><br>
                 </div>
 
-                <div class="col-lg-pull-6">
+                <div class="col-lg-7">
                 <h4>Simulation for a specific manufacturing process (Electrical Discharge Machining)</h4>
-                Design and programming of the whole simulation. The results help understand the mechanisms in tool wear and determine the machining parameters for better performance. See <a href="#publications">publications</a> for what is achieved.<br>
+                <p>Design and programming of the whole simulation. The results help understand the mechanisms in tool wear and determine the machining parameters for better performance.
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-edm">Read more...</button></p>
                 <h4>Inkjet printer designed for liquid metal</h4>
-                Design and programming of a functional inkjet printer for liquid metal with user interface. The printer can efficiently print any input dot pattern on glass, PDMS or other flat surface with input parameters.<br>
+                Design and programming of a functional inkjet printer for liquid metal with user interface. The printer can efficiently print any input dot pattern on glass, PDMS or other flat surface with input parameters.
                 <h4>Direct writing printer for liquid metal</h4>
                 Design of programming of a funtional direct writing printer for liquid metal, especially eGaIn with user interface. The printer can direct write eGaIn following an input trace. More tests are being made on the printer. 
                 </div>
@@ -114,6 +115,49 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    
+    <!-- Modals in About Section-->
+    <div id="modal-edm" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Look into EDM with simulation</h4>
+                    with <b>Prof. Jingyu Pei</b> in <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>
+                </div>
+                <div class="modal-body">
+                    <p>Electric Discharging Machining (EDM) process is a precise method of manufacturing. While it is widely applied in industry, the mechanism of discharging model is still unknown, and accurate prediction of tool shaping is in great need to optimize machining parameters.</p>
+                    <p>Simulation is used in this work to validate the discharging model and predict electrode shapes. Two models based on geometry and electric field are both tested. The results show accordance with the experiments, while the electric field model performs better in reducing errors.</p>
+                    <p>See <b>Publications</b> for what is achieved.</p>
+                </div>
+            </div>
+        </div>
+   </div>
+   <div id="modal-ijprt" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Inkjet printer designed for liquid metal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>dsad</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div id="modal-dwprt" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Direct writing printer designed for liquid metal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>dsad</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
 
 </body>
 
