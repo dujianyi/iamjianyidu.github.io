@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
+    <link href="css/timeline.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,11 +66,12 @@
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
-            <div class="row">
+           <div class="row">
                 <div class="col-lg-4">
-                    <h1>Jianyi Du</h1>
+                    <div class="page-header">
+                        <h1> Jianyi Du</h1>
                     Everyone calls me <b>Jarvis...</b><br>
-                    <hr>
+                    </div>
                     An undergraduate student of Mechanical Engineering<br>
                     from Purdue University<br>
                     Research assistant in <a href="http://e-lab.github.io">e-Lab</a> and <a href="https://engineering.purdue.edu/Faboratory/">Faboratory</a>
@@ -80,15 +81,47 @@
                     <a class="btn btn-default" href="https://github.com/dujianyi"><img src="img/github-logo.png" style="height:14px;">&nbsp;GitHub</a>
                     <a class="btn btn-default" href="mailto:dujianyi@gmail.com"><img src="img/gmail-logo.png" style="height:14px;">&nbsp;Email</a><br>
                 </div>
-
                 <div class="col-lg-7">
-                <h4>Simulation for a specific manufacturing process (Electrical Discharge Machining)</h4>
-                <p>Design and programming of the whole simulation. The results help understand the mechanisms in tool wear and determine the machining parameters for better performance.
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-edm">Read more...</button></p>
-                <h4>Inkjet printer designed for liquid metal</h4>
-                Design and programming of a functional inkjet printer for liquid metal with user interface. The printer can efficiently print any input dot pattern on glass, PDMS or other flat surface with input parameters.
-                <h4>Direct writing printer for liquid metal</h4>
-                Design of programming of a funtional direct writing printer for liquid metal, especially eGaIn with user interface. The printer can direct write eGaIn following an input trace. More tests are being made on the printer. 
+                <ul class="timeline">
+                    <li class="timeline-inverted">
+                    <div class="timeline-badge">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Simulation for a specific manufacturing process (Electrical Discharge Machining)</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Design and programming of the whole simulation. The results help understand the mechanisms in tool wear and determine the machining parameters for better performance.
+                            <button type="text" class="modal_readmore" data-toggle="modal" data-target="#modal-edm">Click to read more...</button></p>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="timeline-inverted">
+                    <div class="timeline-badge">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Inkjet/Direct writing printer designed for liquid metal</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Design and programming of a functional inkjet/direct writing printer for liquid metal with user interface. The printer can efficiently print eGaIn on glass, PDMS or other flat surface with input parameters.</p>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="timeline-inverted">
+                    <div class="timeline-badge">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Sessile drop contact angle measurer based on extended Generalized Hough Transform (GHT)</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Design of a new algorithm to automate the calculation of contact angle based on the extended Generalized Hough transform to characterize the sessile drop profile. Bashforth-Adam equation is used for fitting the profile. The results show balanced performance between accuracy and efficiency.</p>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+
                 </div>
             </div>
         </div>
