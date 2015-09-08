@@ -4,13 +4,13 @@
   position: relative;
 }
 .timeline:before {
-  top: 55px;
-  bottom: 170px;
+  top: 50px;
+  bottom: 0px;
   position: absolute;
   content: " ";
   width: 3px;
   background-color: #eeeeee;
-  left: 3%;
+  left: 2%;
   margin-left: -1.5px;
 }
 .timeline > li {
@@ -47,7 +47,6 @@
   position: absolute;
   top: 26px;
   right: -15px;
-  display: inline-block;
   border-top: 15px solid transparent;
   border-left: 15px solid #ccc;
   border-right: 0 solid #ccc;
@@ -75,7 +74,7 @@
   position: absolute;
   top: 18px;
   left: 0%;
-  margin-left: -7px;
+  margin-left: -8px;
   background-color: #999999;
   z-index: 100;
   border-top-right-radius: 50%;
@@ -136,4 +135,18 @@
 .modal_readmore:hover {
   background-color: #eee;
   border-radius: 5px;
+}
+
+.about_left {
+  margin-left: 5%;
+  float: left;
+  width: 25%;
+}
+.about_right {
+  margin-left: 35%; 
+  width: 62%;
+
+}
+.about_right > p {
+  margin-bottom: 2em;
 }
