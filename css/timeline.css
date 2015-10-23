@@ -138,13 +138,13 @@
 }
 
 .about_left {
-  margin-left: 5%;
+  margin-left: 0%;
   float: left;
-  width: 25%;
+  width: 30%;
 }
 .about_right {
   margin-left: 35%; 
-  width: 62%;
+  width: 60%;
 
 }
 .about_right > p {
