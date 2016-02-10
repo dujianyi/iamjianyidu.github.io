@@ -2,59 +2,64 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title>I am Jianyi Du</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
+    <style>
+    body {
+        padding-top: 70px;
+    }
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    .bg-1 {
+        background-color: #ffffff; /* Green */
+        color: #000000;
+    }
+    .bg-2 {
+        background-color: #474e5f; /* Dark Blue */
+        color: #ffffff;
+    }
+    .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+    }
+    </style>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">About</a>
+                <a class="navbar-brand" href="#">Home</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
                     <li>
-                        <a class="page-scroll" href="#publications">Publications</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="files/cv_jianyidu.pdf">CV</a>
+                        <a href="#research">Research</a>
                     </li>
                 </ul>
             </div>
@@ -63,66 +68,56 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-           <div class="row">
-                <div class="about_left">
-                    <div class="page-header">
-                        <h1> Jianyi Du</h1>
-                    Everyone calls me <b>Jarvis...</b><br>
-                    </div>
-                    <p>An undergraduate student of Mechanical Engineering from Purdue University</p>
-                    <p>Research assistant in <a href="http://e-lab.github.io">e-Lab</a> and <a href="https://engineering.purdue.edu/Faboratory/">Faboratory</a></p>
-                    <br>
-                    <p><b>More about me</b></p>
-                    <a class="btn btn-default" href="https://www.linkedin.com/pub/jianyi-du/a9/216/12a"><img src="img/linkedin-logo.png" style="height:14px;">&nbsp;LinkedIn</a>
-                    <a class="btn btn-default" href="https://github.com/dujianyi"><img src="img/github-logo.png" style="height:14px;">&nbsp;GitHub</a>
-                    <a class="btn btn-default" href="mailto:dujianyi@gmail.com"><img src="img/gmail-logo.png" style="height:14px;">&nbsp;Email</a><br>
+    <!-- Page Content -->
+    <section id="home" class="bg-1">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <img src="img/profile.jpg" class="img-thumbnail" style="max-width:30%">
+                <h1>Jianyi Du (杜健逸)</h1>
+                <p class="lead">or <b>Jarvis</b>...</p>
+                <p>I am an undergraduate Mechanical Engineering student<br>
+                   in <b>Purdue University</b> and <b>Shanghai Jiao Tong University</b>.</p>
+                <p>Currently I am a research assistant in <a href="https://engineering.purdue.edu/Faboratory/">Purdue Faboratory</a>.</p>
+                <p>Here is my <i class="glyphicon glyphicon-user"></i> <a href="files/cv_jianyidu.pdf">CV</a>.</p>
+                <p><b>Want to know more about me?</b><br>
+                <a class="btn btn-default" href="https://github.com/dujianyi"><img src="img/github-logo.png" style="height:24px;"></a>
+                <a class="btn btn-default" href="mailto:dujianyi@gmail.com"><img src="img/gmail-logo.png" style="height:24px;"></a></p>
+        </div>
+    </div>
+    </section>
+    
+    <section id="research" class="bg-2">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/res/edm.jpg" class="img-rounded", style="max-width: 95%;">
+                    <h4><i class="glyphicon glyphicon-cog"></i>&nbsp;Manufacturing Process Simulation</h4>
+                    <p style="left-aligned"> Simulation in manufacturing helps understand the mechanisms in tool wear and determine the machining parameters for better performance.
+                    <br><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-edm">Click to read more...</button></p>
+                    <b>Publications:</b>
+                    <!-- publications -->
+                    <p><a href="http://www.sciencedirect.com/science/article/pii/S089069551440018X">IJMTM1</a>
+                    </p>
                 </div>
-                <div class="about_right">
-                    <h4><i class="glyphicon glyphicon-cog"></i>
-                    Simulation for a specific manufacturing process (Electrical Discharge Machining)</h4>
-                    <p>Design and programming of the whole simulation. The results help understand the mechanisms in tool wear and determine the machining parameters for better performance.
-                    <button type="button" class="modal_readmore" data-toggle="modal" data-target="#modal-edm">Click to read more...</button></p>
-                    <h4><i class="glyphicon glyphicon-object-align-vertical"></i>
-                    Inkjet/Direct writing printer designed for liquid metal</h4>
-                    <p>Design and programming of a functional inkjet/direct writing printer for liquid metal with user interface. The printer can efficiently print eGaIn on glass, PDMS or other flat surface with input parameters.</p>
-                    <h4><i class="glyphicon glyphicon-tint"></i>
-                    Sessile drop contact angle measurer based on extended Generalized Hough Transform (GHT)</h4>
+                <div class="col-sm-4">
+                    <img src="img/res/dw.jpg" class="img-rounded", style="max-width: 95%;">
+                    <h4><i class="glyphicon glyphicon-object-align-vertical"></i>&nbsp;Inkjet/Direct Writing 2D Printing</h4>
+                    <p>It is always great to directly print functional devices. The synthesis of new material makes it possible to precisely fabricate microscale devices with a magical printer.
+                    <br><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-dw">Click to read more...</button></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/res/ca.jpg" class="img-rounded", style="max-width: 95%;">
+                    <h4><i class="glyphicon glyphicon-tint"></i>&nbsp;Contact Angle Measurement</h4>
                     <p>Design of a new algorithm to automate the calculation of contact angle based on the extended Generalized Hough transform to characterize the sessile drop profile. Bashforth-Adam equation is used for fitting the profile. The results show balanced performance between accuracy and efficiency.</p>
                 </div>
+
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="publications" class="publications-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Publications</h1>
-                    <ol>
-                    <li>Jingyu Pei, Lenan Zhang, <b>Jianyi Du</b>, Xiaoshun Zhuang, Zhaowei Zhou, Shunkun Wu, Yetian Zhu. "A model of tool wear in electrical discharge machining process based on electromagnetic theory", <i>International Journal of Machine Tools and Manufacture</i>, <i>October 2015</i>. (Under review)</li>
-                   <li>Lenan Zhang, <b>Jianyi Du</b>, Xiaoshun Zhuang, Zhiliang Wang, Jingyu Pei. <a href="files/pubs/ijmtm1.pdf">“Geometric prediction of conic tool in micro-EDM milling with fix-length compensation using simulation”</a>, <i>International Journal of Machine Tools and Manufacture</i>, <i>February 2015</i>.
-                   </li>
-                   </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
     
-    <!-- Modals in About Section-->
+    <!-- /.container -->
+
+    <!-- Modals -->
     <div id="modal-edm" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -133,37 +128,31 @@
                 <div class="modal-body">
                     <p>Electric Discharging Machining (EDM) process is a precise method of manufacturing. While it is widely applied in industry, the mechanism of discharging model is still unknown, and accurate prediction of tool shaping is in great need to optimize machining parameters.</p>
                     <p>Simulation is used in this work to validate the discharging model and predict electrode shapes. Two models based on geometry and electric field are both tested. The results show accordance with the experiments, while the electric field model performs better in reducing errors.</p>
-                    <p>See <b>Publications</b> for what is achieved.</p>
                 </div>
             </div>
         </div>
-   </div>
-   <div id="modal-ijprt" class="modal fade">
+    </div>
+    
+    <div id="modal-dw" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Inkjet printer designed for liquid metal</h4>
+                    <h4 class="modal-title">Print Liquid Metal and Polymers</h4>
+                    with <b>Prof. Rebecca Kramer</b> in <a href="https://engineering.purdue.edu/Faboratory/">Purdue Faboratory</a>
                 </div>
                 <div class="modal-body">
-                    <p>dsad</p>
+                    <p>As a metal alloy with the properties of liquid, Gallium-Indium Alloys have shown its wide applications in making strechable devices. The key problem is: How to make things smaller, at the same time keep precision? I built up this printing system and kept characterizing the printing processes. The printing software is based on Python+Qt5, and z-stage attachment helps stabalize the height.</p>
                 </div>
             </div>
         </div>
-   </div>
+    </div>
 
-   <div id="modal-dwprt" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Direct writing printer designed for liquid metal</h4>
-                </div>
-                <div class="modal-body">
-                    <p>dsad</p>
-                </div>
-            </div>
-        </div>
-   </div>
 
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
