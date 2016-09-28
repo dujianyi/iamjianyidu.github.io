@@ -16,19 +16,26 @@
     .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
     .bg-1 {
-        background-color: #ffffff; /* Green */
+        background-color: #ffffff;
         color: #000000;
     }
     .bg-2 {
-        background-color: #474e5f; /* Dark Blue */
+        background-color: #474e5f;
         color: #ffffff;
     }
     .bg-3 {
-        background-color: #ffffff; /* White */
-        color: #555555;
+        background: #dce0e6;
+        color: #000000;
+    }
+
+    p {
+        font-family: "Calibri light", sans-serif;
+        font-size: 16px;
     }
     </style>
 
@@ -61,6 +68,9 @@
                     <li>
                         <a href="#research">Research</a>
                     </li>
+                    <li>
+                        <a href="#photo">Photo Gallery</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -75,9 +85,10 @@
                 <img src="img/profile.jpg" class="img-thumbnail" style="max-width:30%">
                 <h1>Jianyi Du (杜健逸)</h1>
                 <p class="lead">or <b>Jarvis</b>...</p>
-                <p>I am an undergraduate Mechanical Engineering student<br>
-                   in <b>Purdue University</b> and <b>Shanghai Jiao Tong University</b>.</p>
-                <p>Currently I am a research assistant in <a href="https://engineering.purdue.edu/Faboratory/">Purdue Faboratory</a>.</p>
+                <p>I am a graduate student in Mechanical Engineering<br>
+                   in <b>Massachusetts Institute of Technology (MIT)</b>.</p>
+                <p>Currently I am a Research Assistant in <a href="http://web.mit.edu/nnf/">Non-Newtonian Fluid Dynamics Research Group</a>
+                <br>under the guidance of <b>Prof. Gareth McKinley</b>.</p>
                 <p>Here is my <i class="glyphicon glyphicon-user"></i> <a href="files/cv_jianyidu.pdf">CV</a>.</p>
                 <p><b>Want to know more about me?</b><br>
                 <a class="btn btn-default" href="https://github.com/dujianyi"><img src="img/github-logo.png" style="height:24px;"></a>
@@ -87,34 +98,47 @@
     </section>
     
     <section id="research" class="bg-2">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="img/res/edm.jpg" class="img-rounded", style="max-width: 95%;">
-                    <h4><i class="glyphicon glyphicon-cog"></i>&nbsp;Manufacturing Process Simulation</h4>
-                    <p style="left-aligned"> Simulation in manufacturing helps understand the mechanisms in tool wear and determine the machining parameters for better performance.
-                    <br><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-edm">Click to read more...</button></p>
-                    <b>Publications:</b>
-                    <!-- publications -->
-                    <p><a href="http://www.sciencedirect.com/science/article/pii/S089069551440018X">IJMTM1</a>
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/res/dw.jpg" class="img-rounded", style="max-width: 95%;">
-                    <h4><i class="glyphicon glyphicon-object-align-vertical"></i>&nbsp;Inkjet/Direct Writing 2D Printing</h4>
-                    <p>It is always great to directly print functional devices. The synthesis of new material makes it possible to precisely fabricate microscale devices with a magical printer.
-                    <br><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-dw">Click to read more...</button></p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/res/ca.jpg" class="img-rounded", style="max-width: 95%;">
-                    <h4><i class="glyphicon glyphicon-tint"></i>&nbsp;Contact Angle Measurement</h4>
-                    <p>Design of a new algorithm to automate the calculation of contact angle based on the extended Generalized Hough transform to characterize the sessile drop profile. Bashforth-Adam equation is used for fitting the profile. The results show balanced performance between accuracy and efficiency.</p>
-                </div>
-
+        <div class="container-fluid row">
+            <div class="col-sm-12"><h3>I research in...</h3></div>
+            <div class="col-sm-4">
+                <img src="img/res/edm.jpg" class="img-rounded" style="max-width: 100%;">
+                <h4><i class="glyphicon glyphicon-cog"></i>&nbsp;Manufacturing Process Simulation</h4>
+                <p style="left-aligned"> Simulation in manufacturing helps understand the mechanisms in tool wear and determine the machining parameters for better performance.
+                <br><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-edm">Click to read more...</button></p>
+                <b>Publications:</b>
+                <!-- publications -->
+                <p><a class="btn btn-success btn-sm" href="http://www.sciencedirect.com/science/article/pii/S089069551440018X">IJMTM1</a>
+                   <a class="btn btn-warning btn-sm">IJMTM2</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/res/dw.jpg" class="img-rounded" style="max-width: 100%;">
+                <h4><i class="glyphicon glyphicon-object-align-vertical"></i>&nbsp;Inkjet/Direct Writing 2D Printing</h4>
+                <p>It is always great to directly print functional devices. The synthesis of new material makes it possible to precisely fabricate microscale devices with a magical printer.
+                <br><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-dw">Click to read more...</button></p>
+                <b>Publications:</b>
+                <p><a class="btn btn-success btn-sm" href="http://docs.lib.purdue.edu/surf/2015/presentations/125/">PEPBS1</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/res/ca.jpg" class="img-rounded" style="max-width: 100%;">
+                <h4><i class="glyphicon glyphicon-tint"></i>&nbsp;Contact Angle Measurement</h4>
+                <p>Innovative image processing in calculation of contact angles? Let Hough Transform help.</p>
             </div>
         </div>
     </section>
     
+    <section id="photo" class="bg-3">
+        <div class="container-fluid row">
+            <div class="col-sm-12"><h3>Recent me...</h3></div>
+            <br>
+            <div class="col-sm-4">
+                <img src="https://lh3.googleusercontent.com/-FX5FBuxpAuo/VsE74Vql0zI/AAAAAAAABxw/SU0brm0ZWUo/s400-Ic42/DSC_0174.JPG" class="img-thumbnail" style="max-width: 100%">
+                <p>Research Symposium during SURF 2015 (Purdue University)</p>
+            </div>
+        </div>
+    </section>
+
     <!-- /.container -->
 
     <!-- Modals -->
